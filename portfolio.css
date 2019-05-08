@@ -41,7 +41,7 @@ text-decoration-color: #000000;}
     'workNav workNav'
     'work work2'
     'footer footer';
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
 }
 
 .resumeGrid {
