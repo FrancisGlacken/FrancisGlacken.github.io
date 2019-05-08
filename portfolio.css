@@ -1,14 +1,3 @@
-/* Reset */
-
-html,body
-{
-    /*width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow: auto; */
-}
-
 .itemHeader { grid-area: header; }
 .itemWork { 
 	grid-area: work;
@@ -33,12 +22,6 @@ text-decoration-color: #000000;}
 #resumeImage {
   margin: auto;
 }
-/* .resumeGrid > div {
-  background-color: rgba(255, 255, 200, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-} */
 
 .aboutGrid {
   display: grid;
@@ -58,6 +41,7 @@ text-decoration-color: #000000;}
     'workNav workNav'
     'work work2'
     'footer footer';
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 }
 
 .resumeGrid {
@@ -70,10 +54,19 @@ text-decoration-color: #000000;}
   padding: 0px;
 }
 
+.h1{
+    list-style-type: none;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+	overflow: hidden;
+	height: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(FranGlackenImage.png);
+}
+
 .nav{ 
-	background-color: #000000;
-    border:1px solid #ccc;
-    border-width:1px 0;
     list-style-type: none;
     margin:0 auto;
     padding:0;
@@ -115,23 +108,35 @@ text-decoration-color: #000000;}
 	border: 5px solid red; 
 }
 
+/* Reset */
+
+
 html {
-	overflow: hidden;
-	height: 100%;
+	overflow: auto;
+
+}
+
+body{
+	width: 100%;
+    height: 100%;
+	font-family: Verdana;
+	background-image: url("LDTiles_Small.png");
+	background-repeat: repeat;
+	overflow: auto;
+	display: block;
 }
 
 main{
+	background-image: url("NavBarImage.png");
+	background-repeat: repeat;
 	background-color: #b2c0c1;
 	margin-left: 180px;
 	margin-right: 180px;
 }
 
-body{
-	font-family: Verdana;
-	background-image: url("LDTiles_Small.png");
-	background-repeat: repeat;
-	height: 100%;
-	overflow: auto;
+h1 {
+	text-align: center;
+	width: 100%;
 }
 
 
