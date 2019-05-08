@@ -1,5 +1,12 @@
 /* This CSS file actually exists */
 
+.navFlexContainer {
+	display: flex; 
+}
+
+.navFlexContainer > li {
+  flex: 1;
+}
 .itemHeader { grid-area: header; }
 .itemWork { 
 	grid-area: work;
@@ -43,8 +50,9 @@ text-decoration-color: #000000;}
     'workNav workNav'
     'work work2'
     'footer footer';
-
 }
+
+
 
 .resumeGrid {
   display: grid;
@@ -68,12 +76,8 @@ text-decoration-color: #000000;}
 	background-image: url(FranGlackenImage.png);
 }
 
-.nav{ 
-    list-style-type: none;
-    margin:0 auto;
-    padding:0;
+.nav{  
     text-align:center;
-	overflow: hidden;
 	height: 50px;
 	background-image: url("NavBarImage.png");
 }
@@ -129,6 +133,7 @@ body{
 }
 
 main{
+	width: 1019px;
 	background-image: url("NavBarImage.png");
 	background-repeat: repeat;
 	background-color: #b2c0c1;
