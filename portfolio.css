@@ -1,35 +1,13 @@
-/* This CSS file actually exists */
+
+/* Grid Stuff */
 
 .navFlexContainer {
 	display: flex; 
+	padding: 0;
 }
 
 .navFlexContainer > li {
   flex: 1;
-}
-.itemHeader { grid-area: header; }
-.itemWork { 
-	grid-area: work;
-	display: flex;
-	flex-direction: column; }
-.itemWork2 {
-	grid-area: work2;
-	display: flex;
-	flex-direction: column;
-}
-.workNav {
-	grid-area: workNav;
-	display: flex;
-}
-.itemFooter { grid-area: footer; 
-text-decoration-color: #000000;}
-.itemMain { 
-	grid-area: main;
-	display: flex;
-	flex-direction: row; 
-}
-#resumeImage {
-  margin: auto;
 }
 
 .aboutGrid {
@@ -43,17 +21,6 @@ text-decoration-color: #000000;}
 
 }
 
-.myWorkGrid{
-  display: grid;
-  grid-template-areas:
-    'header header'
-    'workNav workNav'
-    'work work2'
-    'footer footer';
-}
-
-
-
 .resumeGrid {
   display: grid;
   grid-template-areas:
@@ -64,26 +31,92 @@ text-decoration-color: #000000;}
   padding: 0px;
 }
 
+.myWorkGrid{
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'workNav workNav'
+    'intro intro'
+    'work3 work3'
+    'work work2'
+    'footer footer';
+}
+.itemHeader { grid-area: header; }
+.workNav {
+	grid-area: workNav;
+	display: flex;
+}
+.itemIntro {
+	grid-area: intro;
+	display: flex;
+	margin: auto;
+	width: 800px;
+	font-size: 20px;
+}
+.itemWork { 
+	grid-area: work;
+	display: flex;
+	flex-direction: column; }
+.itemWork2 {
+	grid-area: work2;
+	display: flex;
+	flex-direction: column;
+}
+.itemWork3 {
+	grid-area = work3;
+	display: flex;
+	flex-direction: row;
+}
+.itemFooter { 
+	grid-area: footer; 
+	text-decoration-color: #000000;}
+.itemMain { 
+	grid-area: main;
+	display: grid;
+}
+
+
+
+
+
+
+
+
+
+
+/* Normal stuff */
+
 .h1{
     list-style-type: none;
     margin:0 auto;
     padding:0;
     text-align:center;
 	overflow: hidden;
-	height: 200px;
+	height: 160px;
 	background-size: contain;
-	background-repeat: no-repeat;
 	background-image: url(FranGlackenImage.png);
 }
 
 .nav{  
     text-align:center;
-	height: 50px;
+    margin: auto;
 	background-image: url("NavBarImage.png");
+}
+
+.nav ul li {
+    display: grid;
+    height:60px;
+    text-align: center;
+    vertical-align: middle;
+    width:20%;
+    background-color: #003838;
+	border: 2px solid #FFFFFF;
 }
 .nav li{
     display:inline;
+     display: table-cell;
 }
+
 .nav a{
     display:inline-block;
     padding:10px;
@@ -95,23 +128,40 @@ text-decoration-color: #000000;}
 
 .nav li a:hover:not(.active) {background-color: #999;}
 
-.nav li a.active {background-color: #003838;} 
+.nav li a.active {
+	background-color: #FF0000;} 
 
+.textWrapper {
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
 
+}
 
 .sabwrapper{
 	display: block;
 	border: 5px solid red;
 	width: 500px;
 	height: 400px; 
+	/* line-height: 25px; */
 }
-#aboutmewrapper{
-	display: inline-block;
-	font-size: 17px;
-	width: 500px; 
-	line-height: 25px; 
-	margin-bottom: 1000px; 
-	border: 5px solid red; 
+
+.pclockScreenShotWrapper {
+	margin: 13px;
+	width: 230px;
+	height: 480px;
+}
+
+#resumeImage {
+  margin: auto;
+  margin-bottom: 16px;
+}
+
+#navSABItem {
+	font-size: 20px; 
+}
+
+#navLDLItem {
+	font-size: 20px; 
 }
 
 /* Reset */
@@ -137,8 +187,7 @@ main{
 	background-image: url("NavBarImage.png");
 	background-repeat: repeat;
 	background-color: #b2c0c1;
-	margin-left: 180px;
-	margin-right: 180px;
+	margin: auto;
 }
 
 h1 {

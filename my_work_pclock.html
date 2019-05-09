@@ -10,43 +10,46 @@
 		<div class="myWorkGrid">
 
 		  	<div class="itemHeader">
-		  	<h1 class="h1"></h1>
-				<header>
-					<nav class="nav" style="background-image: url(NavBarImage.png)">
-		  				<li><a href="index.html">Home</a></li>
-		  				<li><a class="active" href="my_work.html">My Work</a></li>
-		  				<li><a href="resume.html">Resumé</a></li>
-			  		</nav>
-			  	</header>
-		  	</div>
-
-		  	<div class="workNav"> 
-		  		<nav class="nav">
-		  			<li><a href="my_work.html">Super Asteroid Blaster</a></li>
-		  			<li><a href="my_work_ldl.html">Little Diablo Labyrinth</a></li>
-		  			<li><a class="active" href="my_work_pclock.html">Punch Clock</a></li>
+	  		<h1 class="h1"></h1>
+		  	<header>
+				<nav class="nav">
+					<ul class="navFlexContainer">
+	  					<li><a href="index.html">Home</a></li>
+	  					<li><a id="navSABItem" href="my_work.html">Super Asteroid Blaster</a></li>
+			  			<li><a id="navLDLItem" href="my_work_ldl.html">Little Diablo Labyrinth</a></li>
+			  			<li><a class="active" href="my_work_pclock.html">Punch Clock</a></li>
+	  					<li><a href="resume.html">Resumé</a></li>
+	  				</ul>
 		  		</nav>
+		  	</header>
 		  	</div>
-		  	
 
-		  	<div class="itemWork">
-		  		<img src="pclock1.png" style="width:500px; height300px;"></img>
-		  		<img src="pclock2.png" style="width:500px; height:800px;"></img>
-		  		<img src="pclock3.png" style="width:500px; height:800px;"></img>
+		  	<div class="itemIntro">
+					<p class="textWrapper"> Punch Clock is a fully functioning time keeping app created by me and my friend, Mitch Greene. The app allows you to make categories in which the user can then enter time entries into. Common uses would be to help keep track of your work hours or to see your progress at the gym. Working on this app expanded my knowledge of Java and Android programming immensely.</p>
+			</div>
+
+			<div class="itemWork3">
+				<img src="pclock2.png" class="pclockScreenShotWrapper"></img>
+		  		<img src="pclock3.png" class="pclockScreenShotWrapper"></img>
+		  		<img src="pclock4.png" class="pclockScreenShotWrapper"></img>
+		  		<img src="pclock5.png" class="pclockScreenShotWrapper"></img>
+		  	</div>
+		  		
+
+		  	<!-- <div class="itemWork"> 
+		  		<img src="pclock1.png" style="width:500px; height:300px;"></img>
 			</div>
 
 			<div class="itemWork2">
-				<p> Punch Clock is a fully functioning time keeping app me and my friend worked on. The app allows you to make "categories" in which the user can then enter time entries into. An example might be keeping track of your hours or working towards a goal of a certain amount of hours per week. I learned a ton about Java and Android programming with this application. </p>
+
+				<p class="textWrapper"> FormatTimeUtil.java is a simple Java class I made for formatting numbers into a one of two different formats for displaying time. It has two methods, one for converting a long value into the format of "hh:mm:ss" and another for "00d00h00m". This class was used to format the display of the total time entered into a category and various instances of timers.</p>
+
+				<p class="textWrapper">This is the home screen for Punch Clock. Here, you can create a category and begin your time keeping. The total time committed to each category is displayed, the favorites icon is listed, and you are given an array of buttons that grant stopwatch functionality. Clicking on a category card will bring you to the detail page for that category.</p>
+
+				<p class="textWrapper">This is the detail screen. Night Mode is activated. It looked good. you can list a bunch of different times here. </p>
 
 
-				<p> FormatTimeUtil.java is a simple Java class I made for formatting numbers into a one of two different formats for displaying time. It has two methods, one for converting a long value into the format of "hh:mm:ss" and another for "00d00h00m". This class was used to format the display of the total time entered into a category and various instances of timers.</p>
-
-				<p>This is the home screen for Punch Clock. Here, you can create a category and begin your time keeping. The total time committed to each category is displayed, the favorites icon is listed, and you are given an array of buttons that grant stopwatch functionality. Clicking on a category card will bring you to the detail page for that category.</p>
-
-				</p>This is the detail screen. Night Mode is activated. It looked good. you can list a bunch of different times here. </p>
-
-
-			</div>
+			</div> --> 
 			<div class="itemFooter"></div>
 	  	</div>
 	  	</main>
