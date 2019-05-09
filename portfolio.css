@@ -31,32 +31,47 @@
   padding: 0px;
 }
 
-.myWorkGrid{
+.sabGrid{
   display: grid;
   grid-template-areas:
     'header header'
-    'workNav workNav'
     'intro intro'
-    'work3 work3'
-    'work work2'
+    'work work'
     'footer footer';
 }
-.itemHeader { grid-area: header; }
-.workNav {
-	grid-area: workNav;
-	display: flex;
+
+.ldlGrid{
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'intro intro'
+    'ldl1 ldl1'
+    'ldl2 ldl2';
 }
+
+.punchClockGrid{
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'intro intro'
+    'itemPC1 itemPC1'
+    'itemPC2 itemPC2'
+    'footer footer';
+}
+
+.itemHeader { grid-area: header; }
+
 .itemIntro {
 	grid-area: intro;
 	display: flex;
 	margin: auto;
-	width: 800px;
 	font-size: 20px;
 }
+
 .itemWork { 
 	grid-area: work;
 	display: flex;
-	flex-direction: column; }
+	flex-direction: row; }
 .itemWork2 {
 	grid-area: work2;
 	display: flex;
@@ -67,6 +82,29 @@
 	display: flex;
 	flex-direction: row;
 }
+
+.itemLDL1 { 
+	grid-area: ldl1;
+	display: flex;
+	flex-direction: row; }
+
+.itemLDL2{
+	grid-area: ldl2;
+	display: flex;
+	flex-direction: row;
+}
+
+.itemPC1 {
+	grid-area = itemPC1;
+	display: flex;
+	flex-direction: row;
+}
+
+.itemPC2 { 
+	grid-area: itemPC2;
+	display: flex;
+	flex-direction: row;
+	font-size: 20px; }
 .itemFooter { 
 	grid-area: footer; 
 	text-decoration-color: #000000;}
@@ -93,7 +131,6 @@
     text-align:center;
 	overflow: hidden;
 	height: 160px;
-	background-size: contain;
 	background-image: url(FranGlackenImage.png);
 }
 
@@ -107,34 +144,27 @@
     display: grid;
     height:70px;
     text-align: center;
-    vertical-align: middle;
     width:20%;
     background-color: #003838;
 	border: 2px solid #FFFFFF;
 }
-.nav li{
-    display:inline;
-     display: table-cell;
-}
+
 
 .nav a{
     display:inline-block;
-    padding:10px;
+    padding:11px;
 	color: white;
 	text-align: center;
+	vertical-align: sub;
 	text-decoration: none;
 	font-size: 25px;
+    
 }
 
 .nav li a:hover:not(.active) {background-color: #999;}
 
 .nav li a.active {
 	background-color: #FF0000;} 
-
-.textWrapper {
-	border: 3px solid #FFFFFF;
-	color: #FFFFFF;
-}
 
 .sabwrapper{
 	display: block;
@@ -152,8 +182,30 @@
 
 .ldlScreenShotWrapper {
 	margin: 8px;
-	width: 500px;
-	height: 300px;
+	width: 480px;
+	height: 280px;
+}
+
+.textWrapper {
+	display: table;
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
+	height: 100%;
+	margin: 8px;
+	padding: 30px;
+	background-color: #003838;
+}
+
+.ldlTextWrapper > p{
+	margin: 20px;
+	text-align: center;
+	border: 5px solid #FFFFFF;
+}
+
+#scriptImage {
+  margin: 10px;
+  width: 500px;
+  height: 800px;
 }
 
 #resumeImage {
@@ -185,8 +237,8 @@ body{
 	width: 100%;
     height: 100%;
 	font-family: Verdana;
-	background-image: url("LDTiles_Small.png");
-	background-repeat: repeat;
+	background-image: url("bubbles.png");
+	background-repeat: round;
 	overflow: auto;
 	display: block;
 }
