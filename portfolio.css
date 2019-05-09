@@ -151,6 +151,12 @@
 	height: 480px;
 }
 
+.ldlScreenShotWrapper {
+	margin: 8px;
+	width: 500px;
+	height: 300px;
+}
+
 #resumeImage {
   margin: auto;
   margin-bottom: 16px;
@@ -162,6 +168,10 @@
 
 #navLDLItem {
 	font-size: 20px; 
+}
+
+.customCursor {
+  cursor: url(devilguy.png), auto;
 }
 
 /* Reset */
