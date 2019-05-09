@@ -202,6 +202,16 @@
 	border: 5px solid #FFFFFF;
 }
 
+#scriptText {
+	display: table;
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
+	height: 100%;
+	margin: 8px;
+	padding: 30px;
+	background-color: #003838;
+}
+
 #scriptImage {
   margin: 10px;
   width: 500px;
