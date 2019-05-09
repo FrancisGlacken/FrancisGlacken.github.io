@@ -10,11 +10,22 @@
   flex: 1;
 }
 
+.footerFlex {
+	display: flex;
+	padding: 20px;
+}
+
+.footerFlex > a {
+	margin-right: 80px;
+	margin-left: 20px;
+}
+
 .aboutGrid {
   display: grid;
   grid-template-areas:
     'header'
     'main'
+    'main2'
     'footer';
   grid-gap: 0px;
   padding: 0px;
@@ -36,7 +47,7 @@
   grid-template-areas:
     'header header'
     'intro intro'
-    'work work'
+    'work work2'
     'footer footer';
 }
 
@@ -61,6 +72,25 @@
 
 .itemHeader { grid-area: header; }
 
+.itemMain { 
+	grid-area: main;
+	display: grid;
+}
+
+.itemMain2 { 
+	grid-area: main2;
+	display: flex;
+	flex-direction: row;
+}
+
+.itemFooter { 
+	background-image: url(circuitBoard.png);
+	background-size: 100%;
+	margin: 20px;
+	grid-area: footer; 
+	display: grid;
+	height: 100px;}
+
 .itemIntro {
 	grid-area: intro;
 	display: flex;
@@ -71,16 +101,11 @@
 .itemWork { 
 	grid-area: work;
 	display: flex;
-	flex-direction: row; }
+	flex-direction: column; }
 .itemWork2 {
 	grid-area: work2;
 	display: flex;
 	flex-direction: column;
-}
-.itemWork3 {
-	grid-area = work3;
-	display: flex;
-	flex-direction: row;
 }
 
 .itemLDL1 { 
@@ -105,17 +130,6 @@
 	display: flex;
 	flex-direction: row;
 	font-size: 20px; }
-.itemFooter { 
-	grid-area: footer; 
-	text-decoration-color: #000000;}
-.itemMain { 
-	grid-area: main;
-	display: grid;
-}
-
-
-
-
 
 
 
@@ -196,6 +210,17 @@
 	background-color: #003838;
 }
 
+#footerText {
+	display: table;
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
+	height: 80%;
+	margin: 8px;
+	padding-left: 45px;
+	margin-top: 10px;
+	background-color: #003838;
+}
+
 .ldlTextWrapper > p{
 	margin: 20px;
 	text-align: center;
@@ -206,7 +231,6 @@
 	display: table;
 	border: 3px solid #FFFFFF;
 	color: #FFFFFF;
-	height: 100%;
 	margin: 8px;
 	padding: 30px;
 	background-color: #003838;
@@ -231,11 +255,29 @@
 	font-size: 20px; 
 }
 
-.customCursor {
-  cursor: url(devilguy.png), auto;
-}
 
 /* Reset */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 html {
@@ -265,6 +307,35 @@ h1 {
 	text-align: center;
 	width: 100%;
 }
+
+li {
+	list-style-type: none;
+}
+
+
+a.footerLink {
+	font-size: 25px;
+}
+
+a.footerLink:link {
+	color: #FFddFF;
+	text-decoration: none;
+}
+
+a.footerLink:visited {
+	color: grey;
+	text-decoration: none;
+}
+
+a.footerLink:hover {
+	background-color: #999;
+	text-decoration: underline;
+}
+
+a.footerLink:active {
+	background-color: #FF0000;;
+	text-decoration: underline;
+} 
 
 
 
