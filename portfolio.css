@@ -271,7 +271,7 @@ img {
 
 
 html {
-	overflow: none;
+	overflow: hidden;
 
 }
 
@@ -281,7 +281,7 @@ body{
 	font-family: Verdana;
 	background-image: url("bubbles.png");
 	background-repeat: round;
-	overflow: none;
+	overflow: hidden;
 	display: block;
 }
 
