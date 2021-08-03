@@ -84,7 +84,7 @@
 }
 
 .itemFooter { 
-	background-image: url(assets/images/circuitBoard.png);
+	background-image: url("assets/images/circuitBoard.png");
 	background-size: 100%;
 	margin: 20px;
 	grid-area: footer; 
@@ -145,7 +145,7 @@
     text-align:center;
 	overflow: hidden;
 	height: 160px;
-	background-image: url(assets/images/FranGlackenImage.png);
+	background-image: url("assets/images/FranGlackenImage.png");
 }
 
 .nav{  
