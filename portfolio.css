@@ -120,7 +120,7 @@
 }
 
 .itemPC1 {
-	grid-area = itemPC1;
+	grid-area : itemPC1;
 	display: flex;
 	flex-direction: row;
 }
