@@ -13,9 +13,18 @@
 <p>My first paragraph.</p>
 
 <script src="Little Diablo Enflamed Build 1/Build/UnityLoader.js"></script>
-<script> 
-var gameInstance = UnityLoader.instantiate("gameContainer", 
-	"Little Diablo Enflamed Build 1/Build/Little Diablo Enflamed.json");
+<!-- Unity WebGL loader script -->
+<script src="Build/YourGame.loader.js"></script>
+<script>
+  createUnityInstance(document.querySelector("#gameContainer"), {
+    dataUrl: "Build/YourGame.data",
+    frameworkUrl : "Build/YourGame.framework.js",
+    codeUrl: "Build/YourGame.wasm",
+    streamingAssetsUrl: "StreamingAssets",
+    companyName: "YourCompanyName",
+    productName: "YourProductName",
+    productVersion: "1.0",
+  }, (progress) => { /* handle progress */ }, (unityInstance) => { /* handle unity instance */ });
 </script>
 <div class="webgl-content">
 	<div id="gameContainer" style="width: 960px; height: 600px"></div>
