@@ -1,35 +1,123 @@
 <!DOCTYPE html>
-<html lang=en>
-<body>
-
-<link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Preview • Pico CSS</title>
+    <meta
+      name="description"
+      content="A starter example with all elements and components used in Pico design system. Built with Pico CSS."
     />
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico" />
+    <link rel="canonical" href="https://picocss.com/examples/preview/" />
+
+    <!-- Pico.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.0-rc2/css/pico.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="container">
+      <hgroup>
+        <h1>FRANCIS GLACKEN</h1>
+        <p>I make games. Please try one of them below!</p>
+      </hgroup>
+    </header>
+    <!-- ./ Header -->
+	
+
+      <!-- Buttons-->
+      <section id="buttons">
+        <h2>Buttons</h2>
+        <p class="grid">
+          <button>Primary</button>
+          <button class="secondary">Secondary</button>
+          <button class="contrast">Contrast</button>
+        </p>
+        <p class="grid">
+          <button class="outline">Primary outline</button>
+          <button class="outline secondary">Secondary outline</button>
+          <button class="outline contrast">Contrast outline</button>
+        </p>
+      </section>
+      <!-- ./ Buttons -->
+
+  
+
+      
+
+      <!-- Article-->
+      <article id="article">
+        <h2>Article</h2>
+
+        <p> <a href="Little Diablo Enflamed Build 1/index.html">Play Little Diablo Enflamed</a> </p>
+        <p>
+          Little Diable is a platforming game inspired by Kirby and other NES platformers of the day. 
+        </p>
+        <footer>
+          <small>Little Dee needs to save Wee Gaby from the mean Big Raph.</small>
+        </footer>
+      </article>
+      <!-- ./ Article-->
+
+     
+    </main>
+    <!-- ./ Main -->
+
+    <!-- Footer -->
+    <footer class="container">
+      <small
+        >Built with <a href="https://picocss.com">Pico</a> •
+        <a href="https://github.com/picocss/examples/blob/master/v2-html/index.html"
+          >Source code</a
+        ></small
+      >
+    </footer>
+    <!-- ./ Footer -->
+
+    <!-- Modal example -->
+    <dialog id="modal-example">
+      <article>
+        <a
+          href="#close"
+          aria-label="Close"
+          class="close"
+          data-target="modal-example"
+          onclick="toggleModal(event)"
+        ></a>
+        <h3>Confirm your action!</h3>
+        <p>
+          Little Diable is a platforming game inspired by Kirby and other NES platformers of the day. 
+        </p>
+        <footer>
+          <a
+            href="#cancel"
+            role="button"
+            class="secondary"
+            data-target="modal-example"
+            onclick="toggleModal(event)"
+            >Cancel</a
+          ><a href="#confirm" role="button" data-target="modal-example" onclick="toggleModal(event)"
+            >Confirm</a
+          >
+        </footer>
+      </article>
+    </dialog>
+    <!-- ./ Modal example -->
+
+    <!-- Minimal theme switcher -->
+    <script src="js/minimal-theme-switcher.js"></script>
+
+    <!-- Modal -->
+    <script src="js/modal.js"></script>
+    <div id="gameContainer" style="width: 960px; height: 600px"></div>
 
 
-<h1>My Firstasdas Heading</h1>
-
-<p>My first paragraph.</p>
-
-<p> <a href="Little Diablo Enflamed Build 1/index.html">Play Little Diablo Enflamed</a> </p>
-
-<div id="gameContainer" style="width: 960px; height: 600px"></div>
-
-<!-- Unity WebGL loader script -->
-<script src="FrancisGlacken.github.io/Little Diablo Enflamed Build 1/Build/Little Diablo Enflamed Build 1.loader.js"></script>
-<script>
-  createUnityInstance(document.querySelector("#gameContainer"), {
-    dataUrl: "FrancisGlacken.github.io/Little Diablo Enflamed Build 1/Build/Little Diablo Enflamed Build 1.data",
-    frameworkUrl : "FrancisGlacken.github.io/Little Diablo Enflamed Build 1/Build/Little Diablo Enflamed Build 1.framework.js",
-    codeUrl: "FrancisGlacken.github.io/Little Diablo Enflamed Build 1/Build/Little Diablo Enflamed Build 1.wasm",
-    streamingAssetsUrl: "FrancisGlacken.github.io/Little Diablo Enflamed Build 1/StreamingAssets",
-    companyName: "YourCompanyName",
-    productName: "YourProductName",
-    productVersion: "1.0",
-  }, (progress) => { /* handle progress */ }, (unityInstance) => { /* handle unity instance */ });
-</script>
-
-
-</body>
+    <!-- Main -->
+    <main class="container">
+  </body>
 </html>
+
