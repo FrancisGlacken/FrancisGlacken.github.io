@@ -6,14 +6,42 @@
   background-color: #394046;
   background-image: url("Images/DigitalPortfolioTopBG.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: repeat-y;
   height: 240px;
   line-height: 240px; 
 
 }
 
 .headerCust {
-	background-image: url("Images/NameSprite.png");
+	background-image: url("Images/NamePortrait.png");
 	text-align: center;
 	background-position: 50% 8px; 
+}
+
+.farnPortrait {
+	text-align: center;
+	height: 200px;
+	weight: 200px;
+}
+
+/* column container */
+.row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap; 
+}
+
+.leftRow /* Create two unequal columns that sit next to eachother */
+{
+	-ms-flex: 70%; 
+	flex: 70%;
+	padding: 20px;
+}
+
+.rightRow {
+	-ms-flex: 70%
+	flex: 70%%;
+	padding: 20px;
 }
